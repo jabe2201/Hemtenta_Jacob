@@ -1,0 +1,64 @@
+body {
+    color: white;
+}
+
+.Outer-Container {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    /* Jag skapar en ram att stoppa samtliga divar i för att kunna sätta denna till en Flex-Box och därmed göra dessa till Flex-Box-items. Jag gör sedan denna ram (container)
+    till en kolumn så att dess items kommer att hamna ovanpå varandra. Jag sätter också en höjd för att annars kommer boxarna bara att ta upp så mycket plats som de behöver, dvs.
+    texten plus marginal.*/
+}
+
+.Blue {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    /* Jag vill fördela bitarnas storlek enligt Blå-1, Gul;Grön;Svart-3 och Grå-0,5 och tilldelar dem därför en flex-grow. Jag sätter även dessa till flex för att kunna centrera texten i mitten 
+    av boxen.*/
+}
+
+.Inner-Container {
+    display: flex;
+    flex-grow: 3;
+    /* För att kunna lägga Gul, Grön och Svart på rad behöver jag skapa ännu en ram och göra denna till en Flex-Box. Default-värdet för direction är satt till just row och
+    jag behöver därför inte ändra det.*/
+}
+
+/* Ger varje bit 1/3 storlek var och tilldelar dem en färg. */
+
+.Yellow {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    color: black;
+}
+
+.Green {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+}
+
+.Black {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.Grey {
+    flex-grow: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
